@@ -13,7 +13,7 @@ const emojis = {
   squire: '🛡️',
 };
 
-const selectCharacterData = (character: anyCharacter) => {
+export const selectCharacterData = (character: anyCharacter) => {
   switch (character.type) {
     case 'king':
       return ` <li>Años de reinado: 
@@ -34,7 +34,7 @@ const selectCharacterData = (character: anyCharacter) => {
   }
 };
 
-const makeItem = (item: anyCharacter, i: number) => `
+export const makeItem = (item: anyCharacter, i: number) => `
   <li class="character col">
     <div class="card character__card">
       <img src="img/${item.name.toLowerCase()}.jpg" alt="Foto de ${item.name} ${
